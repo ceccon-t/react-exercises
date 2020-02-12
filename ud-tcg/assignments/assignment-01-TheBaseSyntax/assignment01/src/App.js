@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import UserInput from './components/UserInput/UserInput';
+import UserOutput from './components/UserOutput/UserOutput';
 
 class App extends Component {
   render() {
+    /*
     return (
       <div className="App">
         <header className="App-header">
@@ -13,6 +16,17 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+      </div>
+    );
+    */
+    return (
+      <div>
+        <h1>Assignment 01</h1>
+        <hr />
+        <UserInput />
+        <UserOutput />
+        <UserOutput />
+        <UserOutput />
       </div>
     );
   }

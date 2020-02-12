@@ -1,5 +1,5 @@
-- Create TWO new components: UserInput and UserOutput
-- UserInput should hold an input element, UserOutput two paragraphs
+- <del>Create TWO new components: UserInput and UserOutput</del>
+- <del>UserInput should hold an input element, UserOutput two paragraphs</del>
 - Output multiple UserOutput components in the App component (any paragraph texts of your choice)
 - Pass a username (of your choice) to UserOutput via props and display it there
 - Add state to the App component (=> the username) and pass the username to the UserOutput component
