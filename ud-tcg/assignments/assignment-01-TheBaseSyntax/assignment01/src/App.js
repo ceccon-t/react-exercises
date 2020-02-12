@@ -19,8 +19,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>Assignment 01</h1>
-        <hr />
+        <div className="App-header">
+          <h1 className="App-title">Assignment 01</h1>
+        </div>
         <UserInput inputChangeHandler={this.userNameChangedHandler} username={this.state.username} />
         <UserOutput username={this.state.username} />
         <UserOutput username={this.state.username} />

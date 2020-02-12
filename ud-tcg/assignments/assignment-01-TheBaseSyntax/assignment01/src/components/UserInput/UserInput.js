@@ -1,8 +1,11 @@
 import React from 'react';
+import './UserInput.css';
 
 const UserInput = ( props ) => {
     return(
-        <input onChange={ props.inputChangeHandler } value={ props.username }></input>
+        <div className="UserInput-wrapper">
+            <input className="UserInput-input" onChange={ props.inputChangeHandler } value={ props.username }></input>
+        </div>
     );
 }
 

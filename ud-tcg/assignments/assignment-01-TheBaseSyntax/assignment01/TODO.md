@@ -7,4 +7,4 @@
 - <del>Pass the event-handler method reference to the UserInput component and bind it to the input-change event</del>
 - <del>Ensure that the new input entered by the user overwrites the old username passed to UserOutput</del>
 - <del>Add two-way-binding to your input (in UserInput) to also display the starting username</del>
-- Add styling of your choice to your components/ elements in the components - both with inline styles and stylesheets
+- <del>Add styling of your choice to your components/ elements in the components - both with inline styles and stylesheets</del>

@@ -1,0 +1,10 @@
+.UserOutput-wrapper {
+    background-color: #EEE;
+    padding: 10px;
+}
+
+.UserOutput-username {
+    font-family: cursive;
+    font-size: 30px;
+    color: #24A;
+}

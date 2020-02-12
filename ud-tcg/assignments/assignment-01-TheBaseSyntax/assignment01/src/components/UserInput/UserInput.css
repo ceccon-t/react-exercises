@@ -1,0 +1,11 @@
+.UserInput-wrapper {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.UserInput-input {
+    border: 1px solid #999;
+    border-radius: 7px;
+    text-align: center;
+}
