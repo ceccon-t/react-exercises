@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+
+  sample:
+    container_name: react-ud-tcg-a01-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '13001:3000'
+      
