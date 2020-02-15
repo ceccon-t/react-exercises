@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ud-tcg-a01-deployment
+  namespace: ud-tcg-namespace
+  labels:
+    scope: ud-tcg-assignments
+    number: "01"
+  annotations:
+    focus: syntax
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      scope: ud-tcg-assignments
+  template:
+    metadata:
+      labels:
+        scope: ud-tcg-assignments
+    spec:
+      containers:
+        - image: ceccont/react-ud-tcg-a01-nginx
+          name: ud-tcg-assignment01
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
