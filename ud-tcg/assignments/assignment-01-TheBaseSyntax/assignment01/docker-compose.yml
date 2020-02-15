@@ -8,5 +8,5 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - '13001:3000'
+      - '13001:80'
       
