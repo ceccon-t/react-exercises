@@ -4,6 +4,10 @@ import './ValidationComponent.css'
 const ValidationComponent = (props) => {
 
     const SMALLEST_VALID = 5;
+    const MESSAGE_INVALID = "Text too short";
+    const CSS_CLASS_INVALID = "Invalid";
+    const MESSAGE_VALID = "Text long enough";
+    const CSS_CLASS_VALID = "Valid";
 
     let value = props.textLength;
 
@@ -12,17 +16,17 @@ const ValidationComponent = (props) => {
     }
 
     let generateValidationMessage = (length) => {
-        let message = "Text long enough";
+        let message = MESSAGE_VALID;
         if (!isValid(length)) {
-            message = "Text too short";
+            message = MESSAGE_INVALID;
         }
         return message;
     }
 
     let generateCssClass = (length) => {
-        let cssClass = "Valid";
+        let cssClass = CSS_CLASS_VALID;
         if (!isValid(length)) {
-            cssClass = "Invalid";
+            cssClass = CSS_CLASS_INVALID;
         }
         return cssClass;
     }
