@@ -7,7 +7,7 @@ import CharComponent from './CharComponent/CharComponent';
 class App extends Component {
 
   state = {
-    currentText: "Banana"
+    currentText: "Random"
   }
 
   textChangedHandler = (event) => {
