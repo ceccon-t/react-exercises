@@ -1,0 +1,7 @@
+.ValidationComponent .Valid {
+    color: blue;
+}
+
+.ValidationComponent .Invalid {
+    color: red;
+}
