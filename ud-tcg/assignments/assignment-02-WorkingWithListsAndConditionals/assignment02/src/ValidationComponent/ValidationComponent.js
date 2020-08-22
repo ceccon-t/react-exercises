@@ -8,7 +8,7 @@ const ValidationComponent = (props) => {
     let value = props.textLength;
 
     let isValid = (length) => {
-        return length > SMALLEST_VALID;
+        return length >= SMALLEST_VALID;
     }
 
     let generateValidationMessage = (length) => {
