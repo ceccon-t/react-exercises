@@ -1,4 +1,4 @@
-- Create an inpuit field (in App component) with a change listener which outputs the length of the entered text below (e.g. in a paragraph)
+- Create an input field (in App component) with a change listener which outputs the length of the entered text below (e.g. in a paragraph)
 - Create a new component (=> ValidationComponent) which receives the text length as a prop
 - Inside the ValidationComponent, either output "Text too short" or "Text long enough" dependeing on the text length (e.g. take 5 as a minimum length)
 - Create another component (=> CharComponent) and style it as an inline box (=> display: inline-block, padding: 16px, text-align: center, margin: 16px, border: 1px solid black)
