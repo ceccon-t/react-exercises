@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ValidationComponent from './ValidationComponent/ValidationComponent';
-import CharComponent from './CharComponent/CharComponent';
+import Validation from './Validation/Validation';
+import Char from './Char/Char';
 
 class App extends Component {
 
@@ -37,8 +37,8 @@ class App extends Component {
         <br />
         <input onChange={this.textChangedHandler} value={this.state.currentText}/>
         <p>Length: {this.state.currentText.length}</p>
-        <ValidationComponent textLength={this.state.currentText.length} />
-        {this.state.currentText.split('').map((c, pos) => <CharComponent char={c} clicked={() => this.charClickedHandler(pos)}/>)}
+        <Validation textLength={this.state.currentText.length} />
+        {this.state.currentText.split('').map((c, pos) => <Char char={c} clicked={() => this.charClickedHandler(pos)}/>)}
       </div>
     );
   }

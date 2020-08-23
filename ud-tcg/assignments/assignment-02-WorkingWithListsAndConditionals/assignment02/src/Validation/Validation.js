@@ -1,7 +1,7 @@
 import React, { isValidElement } from 'react';
-import './ValidationComponent.css'
+import './Validation.css'
 
-const ValidationComponent = (props) => {
+const Validation = (props) => {
 
     const SMALLEST_VALID = 5;
     const MESSAGE_INVALID = "Text too short";
@@ -32,10 +32,10 @@ const ValidationComponent = (props) => {
     }
 
     return (
-        <div className="ValidationComponent">
+        <div className="Validation">
             <p className={generateCssClass(value)}>{generateValidationMessage(value)}</p>
         </div>
     );
 }
 
-export default ValidationComponent;
+export default Validation;
