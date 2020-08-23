@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Validation from './Validation/Validation';
+import ValidationDisplay from './Validation/ValidationDisplay';
+import LengthValidator from './Validation/LengthValidator';
+import AnswerValidator from './Validation/AnswerValidator';
 import Char from './Char/Char';
 
 class App extends Component {
+
+  validator = AnswerValidator;
 
   state = {
     currentText: "Random"
@@ -37,7 +41,7 @@ class App extends Component {
         <br />
         <input onChange={this.textChangedHandler} value={this.state.currentText}/>
         <p>Length: {this.state.currentText.length}</p>
-        <Validation textLength={this.state.currentText.length} />
+        <ValidationDisplay text={this.state.currentText} validator={this.validator} />
         {this.state.currentText.split('').map((c, pos) => <Char char={c} clicked={() => this.charClickedHandler(pos)}/>)}
       </div>
     );

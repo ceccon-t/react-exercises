@@ -9,7 +9,7 @@ const Validation = (props) => {
     const MESSAGE_VALID = "Text long enough";
     const CSS_CLASS_VALID = "Valid";
 
-    let value = props.textLength;
+    let value = props.text.length;
 
     let isValid = (length) => {
         return length >= SMALLEST_VALID;
