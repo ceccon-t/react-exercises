@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, NavLink } from 'react-router-dom';
 
 import Courses from './containers/Courses/Courses';
 import Users from './containers/Users/Users';
@@ -10,7 +10,7 @@ class App extends Component {
       <div className="App">
         <ol style={{textAlign: 'left'}}>
           <li><del>Add Routes to load "Users" and "Courses" on different pages (by entering a URL, without Links)</del></li>
-          <li>Add a simple navigation with two links => One leading to "Users", one leading to "Courses"</li>
+          <li><del>Add a simple navigation with two links => One leading to "Users", one leading to "Courses"</del></li>
           <li>Make the courses in "Courses" clickable by adding a link and load the "Course" component in the place of "Courses" (without passing any data for now)</li>
           <li>Pass the course ID to the "Course" page and output it there</li>
           <li>Pass the course title to the "Course" page - pass it as a param or score bonus points by passing it as query params (you need to manually parse them though!)</li>
@@ -20,10 +20,19 @@ class App extends Component {
         </ol>
         <hr />
         <BrowserRouter>
-          <Switch>
-            <Route path="/courses" component={Courses} />
-            <Route path="/users" component={Users} />
-          </Switch>
+          <div>
+            <nav>
+              <ul>
+                <NavLink to="/courses">Courses</NavLink>
+                &nbsp;
+                <NavLink to="/users">Users</NavLink>
+              </ul>
+            </nav>
+            <Switch>
+              <Route path="/courses" component={Courses} />
+              <Route path="/users" component={Users} />
+            </Switch>
+          </div>
         </BrowserRouter>
       </div>
       
