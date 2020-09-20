@@ -20,7 +20,14 @@ class Courses extends Component {
                     {
                         this.state.courses.map( course => {
                             return (
-                                <Link to={'/course'} key={course.id}>
+                                <Link to={{
+                                        pathname: '/course',
+                                        state: {
+                                            courseId: course.id
+                                        }
+                                      }} 
+                                      key={course.id}
+                                      >
                                     <article className="Course" >
                                         {course.title}
                                     </article>
